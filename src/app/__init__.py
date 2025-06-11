@@ -1,7 +1,7 @@
 from flask import Flask
 from app.config import Config
 from app.extensions import db
-from app.core.scheduler import Scheduler  # ta classe custom Scheduler
+from app.core.scheduler import Scheduler
 
 def create_app(config_class=Config):
     app = Flask(__name__)
