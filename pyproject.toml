@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "python-flask"
+version = "0.1.0"
+description = "Start a simple web app with the Flask framework for Python"
+authors = ["Google LLC"]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^3.0.1"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+flake8 = "^4.0.1"
+black = "^21.12b0"
+mypy = "^0.910"
+faker = "^13.3.1"
+httpie = "^2.6.0"
+flask-sqlalchemy = "^3.1.1"
+flask-apscheduler = "^1.13.1"
+dotenv = "^0.9.9"
+
+[tool.poetry.scripts]
+app = 'src.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
